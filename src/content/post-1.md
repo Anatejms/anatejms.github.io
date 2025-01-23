@@ -2,6 +2,13 @@
 slug: "/my-first-blog-post"
 date: "2024-11-27"
 title: "My first blog post"
+featuredImage: test.png
+category: lifestyle
+tags: 
+  - life
+  - sport
+  - tech
+  - travel
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie, ipsum nisi eleifend augue, et finibus turpis massa pretium ex. Quisque elementum odio ut quam rhoncus consequat non sit amet dui. Vivamus in ornare nulla. Mauris sed sollicitudin lacus, eget finibus mauris. Donec non egestas risus, ac dapibus tellus. Nam in accumsan magna, vel porta enim. Vivamus ipsum tellus, ultricies ac cursus ac, viverra eu eros. Nulla vestibulum, neque vitae venenatis congue, turpis mi laoreet urna, nec pulvinar ligula sapien nec tortor. Etiam et nisi blandit, egestas purus sed, vestibulum mauris. In vel risus non sem placerat dictum scelerisque ac augue. Nullam pellentesque risus lorem, vel laoreet felis pellentesque at. Nulla quis tincidunt lectus, quis tempor nunc.

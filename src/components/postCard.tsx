@@ -5,10 +5,10 @@ import { Post } from "../types/post"
 const PostCardComponent = ({ post }: {post: Post})  => (
   <div className="col-md-4">
     <div className="blog-entry">
-      <Link to={`/blog${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: 'url(/static/images/image_1.jpg)'}}></Link>
+      <Link to={`${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: 'url(/static/images/image_1.jpg)'}}></Link>
       <div className="text text-2 pt-2 mt-3">
         <span className="category mb-3 d-block"><a href="#">Technology</a></span>
-        <h3 className="mb-4"><Link to={`/blog${post.frontmatter.slug}`}>{post.frontmatter.title}</Link></h3>
+        <h3 className="mb-4"><Link to={`${post.frontmatter.slug}`}>{post.frontmatter.title}</Link></h3>
         <p className="mb-4">Even the all-powerful Pointing has no control about the blind texts it is an almost</p>
         <div className="author mb-4 d-flex align-items-center">
           <a href="#" className="img" style={{backgroundImage: 'url(/static/images/person_2.jpg)'}}></a>
@@ -26,7 +26,7 @@ const PostCardComponent = ({ post }: {post: Post})  => (
             </p>
           </div>
           <div className="half">
-            <p><Link to={`/blog${post.frontmatter.slug}`} className="btn py-2">Continue Reading <span className="ion-ios-arrow-forward"></span></Link></p>
+            <p><Link to={`${post.frontmatter.slug}`} className="btn py-2">Continue Reading <span className="ion-ios-arrow-forward"></span></Link></p>
           </div>
         </div>
       </div>
