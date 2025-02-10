@@ -6,7 +6,7 @@ const Menu = ()  => (
 			<h1 id="colorlib-logo"><a href="index.html">elen<span>.</span></a></h1>
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
-					<li className="colorlib-active"><a href="/blog">Home</a></li>
+					<li className="colorlib-active"><a href="/">Home</a></li>
 					<li><a href="photography.html">Photography</a></li>
 					<li><a href="travel.html">Travel</a></li>
 					<li><a href="fashion.html">Fashion</a></li>

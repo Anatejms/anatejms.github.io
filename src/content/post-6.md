@@ -1,11 +1,11 @@
 ---
-slug: "/my-first-blog-post"
+slug: "/my-blog-post6"
 date: "2024-11-27"
-title: "My first blog post"
-shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
+title: "My blog post6"
 featuredImage: test.png
-category: lifestyle
-author: John Smith
+shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
+category: technology
+author: George Washington
 tags: 
   - life
   - sport

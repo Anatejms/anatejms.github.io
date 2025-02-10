@@ -5,6 +5,9 @@ export type Post = {
     date: string
     slug: string
     tags: string[]
+    shortDescription: string
+    author: string
+    category: string
   }
-  html: string
+  html?: string
 }

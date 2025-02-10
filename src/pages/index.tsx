@@ -59,6 +59,9 @@ export const pageQuery = graphql`
             slug
             title
             tags
+            author
+            category
+            shortDescription
           }
         }
       }

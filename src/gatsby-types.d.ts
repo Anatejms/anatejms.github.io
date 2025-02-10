@@ -923,9 +923,11 @@ type MarkdownRemarkFilterListInput = {
 };
 
 type MarkdownRemarkFrontmatter = {
+  readonly author: Maybe<Scalars['String']>;
   readonly category: Maybe<Scalars['String']>;
   readonly date: Maybe<Scalars['Date']>;
   readonly featuredImage: Maybe<Scalars['String']>;
+  readonly shortDescription: Maybe<Scalars['String']>;
   readonly slug: Maybe<Scalars['String']>;
   readonly tags: Maybe<ReadonlyArray<Maybe<Scalars['String']>>>;
   readonly title: Maybe<Scalars['String']>;
@@ -940,27 +942,33 @@ type MarkdownRemarkFrontmatter_dateArgs = {
 };
 
 type MarkdownRemarkFrontmatterFieldSelector = {
+  readonly author: InputMaybe<FieldSelectorEnum>;
   readonly category: InputMaybe<FieldSelectorEnum>;
   readonly date: InputMaybe<FieldSelectorEnum>;
   readonly featuredImage: InputMaybe<FieldSelectorEnum>;
+  readonly shortDescription: InputMaybe<FieldSelectorEnum>;
   readonly slug: InputMaybe<FieldSelectorEnum>;
   readonly tags: InputMaybe<FieldSelectorEnum>;
   readonly title: InputMaybe<FieldSelectorEnum>;
 };
 
 type MarkdownRemarkFrontmatterFilterInput = {
+  readonly author: InputMaybe<StringQueryOperatorInput>;
   readonly category: InputMaybe<StringQueryOperatorInput>;
   readonly date: InputMaybe<DateQueryOperatorInput>;
   readonly featuredImage: InputMaybe<StringQueryOperatorInput>;
+  readonly shortDescription: InputMaybe<StringQueryOperatorInput>;
   readonly slug: InputMaybe<StringQueryOperatorInput>;
   readonly tags: InputMaybe<StringQueryOperatorInput>;
   readonly title: InputMaybe<StringQueryOperatorInput>;
 };
 
 type MarkdownRemarkFrontmatterSortInput = {
+  readonly author: InputMaybe<SortOrderEnum>;
   readonly category: InputMaybe<SortOrderEnum>;
   readonly date: InputMaybe<SortOrderEnum>;
   readonly featuredImage: InputMaybe<SortOrderEnum>;
+  readonly shortDescription: InputMaybe<SortOrderEnum>;
   readonly slug: InputMaybe<SortOrderEnum>;
   readonly tags: InputMaybe<SortOrderEnum>;
   readonly title: InputMaybe<SortOrderEnum>;
@@ -2130,6 +2138,16 @@ type StringQueryOperatorInput = {
   readonly nin: InputMaybe<ReadonlyArray<InputMaybe<Scalars['String']>>>;
   readonly regex: InputMaybe<Scalars['String']>;
 };
+
+type MyQueryQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type MyQueryQuery = { readonly allMarkdownRemark: { readonly distinct: ReadonlyArray<string>, readonly edges: ReadonlyArray<{ readonly node: { readonly frontmatter: { readonly category: string | null } | null } }> } };
+
+type AllCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
+
+
+type AllCategoriesQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly category: string | null, readonly slug: string | null, readonly title: string | null, readonly date: string | null, readonly shortDescription: string | null } | null } }> } };
 
 
 }

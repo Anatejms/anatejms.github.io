@@ -8,26 +8,29 @@ import PopularArticles from "../components/popularArticles"
 import TagCloud from "../components/tagCloud"
 import AboutAuthor from "../components/aboutAuthor"
 import Tags from "../components/tags"
+import { Authors } from "../services/authors"
 
 type BlogPostTemplate = {
   markdownRemark: Post
 }
 
 export default function BlogPostTemplate({
-  data, // this prop will be injected by the GraphQL query below.
+  data,
 }: {data: BlogPostTemplate}) {
-  const { markdownRemark } = data // data.markdownRemark holds your post data
+  const { markdownRemark } = data
   const { frontmatter, html } = markdownRemark
-  console.log('frontmatter', frontmatter);
+
+  const author = Authors(frontmatter.author);
+
   return (
     <Layout>
-      <div className="hero-wrap js-fullheight" style={{backgroundImage: 'url(/static/images/bg_1.jpg)', height: '60vh'}} data-stellar-background-ratio="0.5">
+      <div className="hero-wrap js-fullheight" style={{backgroundImage: 'url(/images/bg_1.jpg)', height: '60vh'}} data-stellar-background-ratio="0.5">
 				<div className="overlay"></div>
 				<div className="js-fullheight d-flex justify-content-center align-items-center" style={{height: '60vh'}}>
 					<div className="col-md-8 text text-center">
 						<div className="desc">
 							<h1 className="mb-4">{frontmatter.title}</h1>
-							<p><a href="index" className="btn-custom mr-2">Home <span className="ion-ios-arrow-forward"></span></a> <a href="index" className="btn-custom mr-2">Blog <span className="ion-ios-arrow-forward"></span></a> <a href="index" className="btn-custom">Single <span className="ion-ios-arrow-forward"></span></a></p>
+              <p>{frontmatter.shortDescription}</p>
 						</div>
 					</div>
 				</div>
@@ -37,8 +40,7 @@ export default function BlogPostTemplate({
 	    		<div className="row">
 	    			<div className="col-lg-8">
 	            <h2 className="mb-3 font-weight-bold">{frontmatter.title}</h2>
-	            {/* <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, eius mollitia suscipit, quisquam doloremque distinctio perferendis et doloribus unde architecto optio laboriosam porro adipisci sapiente officiis nemo accusamus ad praesentium? Esse minima nisi et. Dolore perferendis, enim praesentium omnis, iste doloremque quia officia optio deserunt molestiae voluptates soluta architecto tempora.</p>
-	            <p>
+	            {/* <p>
 	              <img src="/static/images/image_1.jpg" alt="" className="img-fluid" />
 	            </p>
 	            <p>Molestiae cupiditate inventore animi, maxime sapiente optio, illo est nemo veritatis repellat sunt doloribus nesciunt! Minima laborum magni reiciendis qui voluptate quisquam voluptatem soluta illo eum ullam incidunt rem assumenda eveniet eaque sequi deleniti tenetur dolore amet fugit perspiciatis ipsa, odit. Nesciunt dolor minima esse vero ut ea, repudiandae suscipit!</p>
@@ -55,7 +57,7 @@ export default function BlogPostTemplate({
                 dangerouslySetInnerHTML={{ __html: html }}
               />
 	            <Tags tags={frontmatter.tags} />
-	            <AboutAuthor />
+	            <AboutAuthor author={author} />
 
 
 	            {/* <div className="pt-5 mt-5">
@@ -215,6 +217,9 @@ export const pageQuery = graphql`
         slug
         title
         tags
+        category
+        shortDescription
+        author
       }
     }
   }
