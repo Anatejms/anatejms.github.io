@@ -1,0 +1,25 @@
+name: 'Anatejms'
+email: 'anatejms@gmail.com'
+address: '203 Fake St. Mountain View, San Francisco, California, USA'
+socialLinks:
+  facebook: 'https://facebook.com'
+  x: 'https://x.com'
+  instagram: 'https://instagram.com'
+  linkedin: 'https://linkedin.com'
+authors:
+  - name: John Smith
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!
+    image: /authors/person_1.jpg
+
+  - name: George Washington
+    bio: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus itaque, autem necessitatibus voluptate quod mollitia delectus aut, sunt placeat nam vero culpa sapiente consectetur similique, inventore eos fugit cupiditate numquam!
+    image: /authors/person_2.jpg
+categories:
+  - name: lifestyle
+    description: 'Elevate your everyday living with inspiring ideas on wellness, fashion, and personal growth. Find practical advice and insights to enhance your lifestyle and well-being.'
+  - name: travel
+    description: 'Discover breathtaking destinations, travel tips, and guides to help you explore the world with ease. From hidden gems to must-see attractions, embark on your next adventure with us.'
+  - name: technology
+    description: 'Stay ahead with the latest tech trends, gadget reviews, and digital innovations. Explore how technology is shaping our future and simplifying our lives.'
+  - name: sport
+    description: 'Dive into the world of sports with the latest news, game analyses, and expert insights. From fitness tips to inspiring athlete stories, stay motivated and in the know about all things sports.'

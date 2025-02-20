@@ -3,7 +3,7 @@ slug: "/my-blog-post5"
 date: "2024-11-27"
 title: "My blog post5"
 shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
-featuredImage: test.png
+featuredImage: "/images/bg_6.jpg"
 category: travel
 author: George Washington
 tags: 

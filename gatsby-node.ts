@@ -19,6 +19,8 @@ exports.createPages = async ({ graphql, actions  }) => {
               title
               date
               shortDescription
+              featuredImage
+              author
             }
           }
         }
@@ -27,14 +29,11 @@ exports.createPages = async ({ graphql, actions  }) => {
   `)
 
   const categoryTemplate = path.resolve(`src/templates/category.tsx`);
-  console.log('productTemplate', categoryTemplate);
+  
   queryResults.data.allMarkdownRemark.edges.map((node: any) => {
     const { category } = node.node.frontmatter;
     return category;
   }).filter(onlyUnique).forEach((category: string) => {
-    console.log('unique cat', category);
-    
-
     createPage({
       path: `/category/${category}`,
       component: categoryTemplate,

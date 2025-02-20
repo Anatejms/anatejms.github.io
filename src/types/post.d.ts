@@ -8,6 +8,7 @@ export type Post = {
     shortDescription: string
     author: string
     category: string
+    featuredImage: string
   }
   html?: string
 }

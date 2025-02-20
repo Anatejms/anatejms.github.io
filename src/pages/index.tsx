@@ -62,6 +62,7 @@ export const pageQuery = graphql`
             author
             category
             shortDescription
+            featuredImage
           }
         }
       }

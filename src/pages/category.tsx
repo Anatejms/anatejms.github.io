@@ -22,11 +22,6 @@ const CategoriesPage = ({
     allMarkdownRemark: { distinct },
   },
 }: CategoriesPage) => {
-  // const Posts = edges
-  //   .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
-  //   .map(edge => <PostCardComponent key={edge.node.id} post={edge.node} />)
-
-  console.log('distinct', distinct);
 
   return (
     <Layout>
@@ -35,7 +30,6 @@ const CategoriesPage = ({
         <div className="photograhy">
           <div className="row no-gutters">
             {distinct.map((category: string, index: number) => {
-              console.log()
               return (
                 <div className="col-md-3" key={category}>
                   <a

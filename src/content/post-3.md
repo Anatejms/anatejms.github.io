@@ -3,7 +3,7 @@ slug: "/my-first-blog-post3"
 date: "2024-11-27"
 title: "My first blog post3"
 shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
-featuredImage: test.png
+featuredImage: "/images/bg_4.jpg"
 category: sport
 author: John Smith
 tags: 

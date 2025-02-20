@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "gatsby"
 import { Post } from "../types/post"
-import { Authors } from "../services/authors";
+import { getAuthor } from "../services/config";
 
 const PostCardComponent = ({ post }: {post: Post})  => {
-  const author = Authors(post.frontmatter.author);
+  const author = getAuthor(post.frontmatter.author);
 
   return (
     <div className="col-md-4">
       <div className="blog-entry">
-        <Link to={`${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: 'url(/images/image_2.jpg)'}}></Link>
+        <Link to={`${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: `url('${post.frontmatter.featuredImage}')`}}></Link>
         <div className="text text-2 pt-2 mt-3">
           <span className="category mb-3 d-block"><a href={`/categories/${post.frontmatter.category}`}>{post.frontmatter.category}</a></span>
           <h3 className="mb-4"><Link to={`${post.frontmatter.slug}`}>{post.frontmatter.title}</Link></h3>

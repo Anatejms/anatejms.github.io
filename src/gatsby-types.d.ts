@@ -2147,7 +2147,7 @@ type MyQueryQuery = { readonly allMarkdownRemark: { readonly distinct: ReadonlyA
 type AllCategoriesQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-type AllCategoriesQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly category: string | null, readonly slug: string | null, readonly title: string | null, readonly date: string | null, readonly shortDescription: string | null } | null } }> } };
+type AllCategoriesQuery = { readonly allMarkdownRemark: { readonly edges: ReadonlyArray<{ readonly node: { readonly id: string, readonly frontmatter: { readonly category: string | null, readonly slug: string | null, readonly title: string | null, readonly date: string | null, readonly shortDescription: string | null, readonly featuredImage: string | null, readonly author: string | null } | null } }> } };
 
 
 }
