@@ -2,7 +2,7 @@
 slug: "/my-blog-post6"
 date: "2024-11-27"
 title: "My blog post6"
-featuredImage: "/images/bg_6.png"
+featuredImage: "/images/bg_6.webp"
 shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
 category: technology
 author: George Washington

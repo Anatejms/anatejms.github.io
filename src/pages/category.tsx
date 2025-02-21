@@ -36,7 +36,7 @@ const CategoriesPage = ({
                   <a
                     href={`/category/${category}`}
                     className="photography-entry img d-flex justify-content-center align-items-center" 
-                    style={{backgroundImage: `url(/categories/${category}.png)`}}
+                    style={{backgroundImage: `url(/categories/${category}.webp)`}}
                   >
                     <div className="overlay"></div>
                     <div className="text text-center">
