@@ -38,7 +38,7 @@ const Footer = ()  => {
               <div className="block-23 mb-3">
                 <ul>
                   <li><span className="icon icon-map-marker"></span><span className="text">{address}</span></li>
-                  <li><a href={`mailto:${email}`}><span className="icon icon-envelope"></span><span className="text">{email}</span></a></li>
+                  <li><a href={`mailto:${email}`} aria-label="contact email"><span className="icon icon-envelope"></span><span className="text">{email}</span></a></li>
                 </ul>
               </div>
             </div>
@@ -47,7 +47,7 @@ const Footer = ()  => {
         <div className="row">
           <div className="col-md-12">
             <p>
-            Copyright &copy; 2025 All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+            Copyright &copy; 2025 All rights reserved | This template is made with <i className="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank" aria-label="colorlib">Colorlib</a>
             </p>
           </div>
         </div>

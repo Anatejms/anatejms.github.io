@@ -9,13 +9,13 @@ const PostCardComponent = ({ post }: {post: Post})  => {
   return (
     <div className="col-md-4">
       <div className="blog-entry">
-        <Link to={`${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: `url('${post.frontmatter.featuredImage}')`}}></Link>
+        <Link to={`${post.frontmatter.slug}`} className="img img-2" style={{backgroundImage: `url('${post.frontmatter.featuredImage}')`}} aria-label="article link"></Link>
         <div className="text text-2 pt-2 mt-3">
           <span className="category mb-3 d-block"><a href={`/categories/${post.frontmatter.category}`}>{post.frontmatter.category}</a></span>
           <h3 className="mb-4"><Link to={`${post.frontmatter.slug}`}>{post.frontmatter.title}</Link></h3>
           <p className="mb-4">{post.frontmatter.shortDescription}</p>
           <div className="author mb-4 d-flex align-items-center">
-            {author.image && <a href="#" className="img" style={{backgroundImage: `url(${author.image})`}}></a>}
+            {author.image && <a href="#" className="img" style={{backgroundImage: `url(${author.image})`}} aria-label="author profile link"></a>}
             <div className="ml-3 info">
               <span>Written by</span>
               <h3><a href="#">{author.name}</a>, <span>{new Date(post.frontmatter.date).toLocaleDateString()}</span></h3>
