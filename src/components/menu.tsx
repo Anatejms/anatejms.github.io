@@ -11,11 +11,7 @@ const Menu = ()  => {
 			<nav id="colorlib-main-menu" role="navigation">
 				<ul>
 					<li className="colorlib-active"><a href="/">Home</a></li>
-					<li><a href="photography.html">Photography</a></li>
-					<li><a href="travel.html">Travel</a></li>
-					<li><a href="fashion.html">Fashion</a></li>
-					<li><a href="about.html">About</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="/category">Categories</a></li>
 				</ul>
 			</nav>
 

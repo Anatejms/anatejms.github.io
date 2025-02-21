@@ -4,6 +4,7 @@ import { Post } from "../types/post"
 import Layout from "../layouts"
 import PostCardComponent from "../components/postCard"
 import Hello from "../components/hello"
+import { getBlogName, getShortDescription } from "../services/config"
 
 type Egde = {
   node: Post
@@ -46,6 +47,17 @@ const IndexPage = ({
 }
 
 export default IndexPage
+
+export const Head = () => {
+  const name = getBlogName()
+  const shortDescription = getShortDescription();
+  return (
+    <>
+      <title>Homepage | {name}</title>
+      <meta name="description" content={shortDescription} />
+    </>
+  )
+}
 
 export const pageQuery = graphql`
   query {

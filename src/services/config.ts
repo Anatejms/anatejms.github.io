@@ -59,3 +59,7 @@ export const getEmail = (): string => {
 export const getAddress = (): string => {
   return ConfigData.address;
 }
+
+export const getShortDescription = (): string => {
+  return ConfigData.shortDescription;
+}

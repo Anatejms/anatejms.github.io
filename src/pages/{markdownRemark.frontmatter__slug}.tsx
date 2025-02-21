@@ -8,7 +8,7 @@ import PopularArticles from "../components/popularArticles"
 import TagCloud from "../components/tagCloud"
 import AboutAuthor from "../components/aboutAuthor"
 import Tags from "../components/tags"
-import { getAuthor } from "../services/config"
+import { getAuthor, getBlogName } from "../services/config"
 
 type BlogPostTemplate = {
   markdownRemark: Post
@@ -57,6 +57,16 @@ export default function BlogPostTemplate({
 	    	</div>
 	    </section>
     </Layout>
+  )
+}
+
+export const Head = ({data: {markdownRemark: {frontmatter: {title, shortDescription}}}}: {data: {markdownRemark: {frontmatter: {title: string, shortDescription: string}}}}) => {
+  const name = getBlogName()
+  return (
+    <>
+      <title>{title} | {name}</title>
+      <meta name="description" content={shortDescription} />
+    </>
   )
 }
 

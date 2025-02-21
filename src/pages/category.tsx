@@ -5,6 +5,7 @@ import Layout from "../layouts"
 import PostCardComponent from "../components/postCard"
 import Hello from "../components/hello"
 import { disconnect } from "process"
+import { getBlogName } from "../services/config"
 
 type Egde = {
   node: Post
@@ -53,6 +54,15 @@ const CategoriesPage = ({
 }
 
 export default CategoriesPage
+
+export const Head = () => {
+  const name = getBlogName()
+  return (
+    <>
+      <title>Categories | {name}</title>
+    </>
+  )
+}
 
 export const pageQuery = graphql`
   query MyQuery {
