@@ -3,7 +3,7 @@ slug: "/my-first-blog-post2"
 date: "2024-11-27"
 title: "My first blog post2"
 shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam convallis, elit eu luctus molestie"
-featuredImage: "/images/bg_3.jpg"
+featuredImage: "/images/bg_3.png"
 category: lifestyle
 author: John Smith
 tags: 

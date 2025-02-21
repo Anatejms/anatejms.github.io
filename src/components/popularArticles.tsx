@@ -16,7 +16,7 @@ const PopularArticles = ()  => (
       </div>
     </div>
     <div className="block-21 mb-4 d-flex">
-      <a className="blog-img mr-4" style={{backgroundImage: "url(/images/image_2.jpg)"}}></a>
+      <a className="blog-img mr-4" style={{backgroundImage: "url(/images/image_2.png)"}}></a>
       <div className="text">
         <h3 className="heading"><a href="#">Even the all-powerful Pointing has no control</a></h3>
         <div className="meta">

@@ -7371,7 +7371,6 @@ h1, h2, h3, h4, h5,
       font-size: 16px;
       font-weight: 700; }
       #colorlib-aside #colorlib-main-menu ul li a {
-        color: rgba(0, 0, 0, 0.4);
         text-decoration: none;
         position: relative;
         padding: 10px 0;
@@ -7964,8 +7963,7 @@ h1, h2, h3, h4, h5,
       .blog-entry .author .info h3 span {
         color: #000000; }
   .blog-entry .author span {
-    font-size: 18px;
-    color: #b3b3b3; }
+    font-size: 18px; }
   .blog-entry .text-2 h3 {
     font-size: 22px;
     font-weight: 700; }

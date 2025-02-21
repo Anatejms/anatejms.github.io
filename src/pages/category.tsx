@@ -5,7 +5,7 @@ import Layout from "../layouts"
 import PostCardComponent from "../components/postCard"
 import Hello from "../components/hello"
 import { disconnect } from "process"
-import { getBlogName } from "../services/config"
+import { getBlogName, getShortDescription } from "../services/config"
 
 type Egde = {
   node: Post
@@ -36,7 +36,7 @@ const CategoriesPage = ({
                   <a
                     href={`/category/${category}`}
                     className="photography-entry img d-flex justify-content-center align-items-center" 
-                    style={{backgroundImage: `url(/categories/${category}.jpg)`}}
+                    style={{backgroundImage: `url(/categories/${category}.png)`}}
                   >
                     <div className="overlay"></div>
                     <div className="text text-center">
@@ -57,9 +57,11 @@ export default CategoriesPage
 
 export const Head = () => {
   const name = getBlogName()
+  const shortDescription = getShortDescription();
   return (
     <>
       <title>Categories | {name}</title>
+      <meta name="description" content={shortDescription} />
     </>
   )
 }
