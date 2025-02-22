@@ -1,3 +1,4 @@
+//@ts-ignore
 import ConfigData from "../../config.yaml"
 
 export type Author = {

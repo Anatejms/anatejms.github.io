@@ -41,7 +41,7 @@ export default function BlogPostTemplate({
 	    			<div className="col-lg-8">
 	            <h2 className="mb-3 font-weight-bold">{frontmatter.title}</h2>
               <div
-                dangerouslySetInnerHTML={{ __html: html }}
+                dangerouslySetInnerHTML={{ __html: html as string }}
               />
 	            <Tags tags={frontmatter.tags} />
 	            <AboutAuthor author={author} />

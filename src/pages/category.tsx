@@ -14,6 +14,7 @@ type CategoriesPage = {
   data: {
     allMarkdownRemark: {
       edges: Egde[]
+      distinct: string[]
     }
   }
 }
