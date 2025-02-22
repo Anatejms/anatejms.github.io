@@ -7439,7 +7439,7 @@ h1, h2, h3, h4, h5,
         list-style: none; }
         #colorlib-aside .colorlib-footer ul li a {
           color: rgba(0, 0, 0, 0.7);
-          padding: 4px; }
+          padding: 14px; }
           #colorlib-aside .colorlib-footer ul li a:hover, #colorlib-aside .colorlib-footer ul li a:active, #colorlib-aside .colorlib-footer ul li a:focus {
             text-decoration: none;
             outline: none;
